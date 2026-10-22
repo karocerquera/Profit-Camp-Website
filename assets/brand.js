@@ -1,3 +1,7 @@
+/* ===== CONFIGURACIÓN: dominios finales ===== */
+const PAYOUTS_URL = 'https://aiprofitcamp.com/payouts/';
+const LANDING_URL = 'https://aiprofitcamp.com/';
+/* ============================================ */
 /* Salto Cuántico · utilidades compartidas */
 window.SQ=(function(){
   const root=document.documentElement.dataset.root||'';
@@ -17,6 +21,12 @@ window.SQ=(function(){
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
   return {mascot,reveal,fmt,root,count};
 })();
+
+
+/* Aplica la URL configurada: en aiprofitcamp.com usa la absoluta; en vistas previas conserva el enlace relativo si existe */
+(function(){const prod=/(^|\.)aiprofitcamp\.com$/.test(location.hostname);const set=(sel,u)=>{if(!u||/[()]/.test(u))return;document.querySelectorAll(sel).forEach(a=>{const h=a.getAttribute('href');if(prod||!h||h==='#')a.setAttribute('href',u)})};
+const go=()=>{set('[data-landing]',typeof LANDING_URL!=='undefined'?LANDING_URL:'');set('[data-payouts]',typeof PAYOUTS_URL!=='undefined'?PAYOUTS_URL:'')};
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',go);else go()})();
 
 /* ===== Velas animadas en márgenes (ondas de Elliott, canvas por cluster) ===== */
 (function(){if(window.__sqEW)return;window.__sqEW=1;
@@ -50,3 +60,7 @@ document.readyState==='complete'?go():addEventListener('load',go);addEventListen
 /* ===== Video en bucle diferido (carga al entrar en pantalla) ===== */
 (function(){const vs=document.querySelectorAll('video[data-lazy]');if(!vs.length||!('IntersectionObserver'in window))return;const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){if(!v.dataset.ok){v.dataset.ok=1;v.querySelectorAll('source[data-src]').forEach(s=>s.src=s.dataset.src);v.load()}rm||v.play().catch(()=>{})}else if(v.dataset.ok)v.pause()}),{rootMargin:'200px'});vs.forEach(v=>io.observe(v))})();
+
+/* ===== YouTube ligero (miniatura -> iframe al hacer clic) ===== */
+document.addEventListener('click',e=>{const b=e.target.closest('[data-yt]');if(!b||b.dataset.on)return;b.dataset.on=1;const f=document.createElement('iframe');
+f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.yt+'?autoplay=1&rel=0';f.title='AI Profit Camp';f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';f.allowFullscreen=true;f.referrerPolicy='strict-origin-when-cross-origin';b.replaceChildren(f)});

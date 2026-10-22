@@ -20,7 +20,7 @@ HABLA CON KAROL CERQUERA
 Continúa la conversación con Karol:
 Instagram
 
-> [(VIDEO 1)]
+> [Video YouTube: https://www.youtube.com/watch?v=ChIz3tA91YI]
 
 ## Bloque 2 — Esto no es un curso
 
@@ -91,14 +91,14 @@ Cómo pasar cuentas de fondeo en días o semanas (no meses ni años)
 - • Matemática detrás de por qué "cualquiera puede pasar los exámenes"
 - • Hacks para cada prop firm
 - • Cómo fondear $100k, $200k o $500k en tiempo récord
-Ejemplo real: (NOMBRE ALUMNO 7) se fondeó con (CIFRA RESULTADO) en solo 1 semana.
+Ejemplo real: Hay traders de la comunidad que se fondearon con (CIFRA RESULTADO) en solo 1 semana.
 SISTEMA 2: RETIROS CONSTANTES
 Cómo retirar dinero de tus cuentas fondeadas una y otra vez
 - • Gestión de riesgo especial para retiros (diferente al fondeo)
 - • Cómo lograr retiros semanales (no solo mensuales)
 - • El "truco" para multiplicar retiros sin quemar cuentas
 - • Matemática detrás del 85% de probabilidad de retirar
-Ejemplo real: (NOMBRE ALUMNO 4) ha retirado (CIFRA RESULTADO) veces consecutivas en 4 meses. (NOMBRE ALUMNO 9) (CIFRA RESULTADO) veces. (NOMBRE ALUMNO 7) está viajando con sus retiros.
+Ejemplo real: (NOMBRE ALUMNO 4) ha retirado (CIFRA RESULTADO) veces consecutivas en 4 meses. Otros traders de la comunidad ya viajan con sus retiros.
 Los 3 pilares que hacen que esto funcione
 1
 Estrategia Validada
@@ -184,16 +184,8 @@ Te lo cuentan ellos mismos
 — (NOMBRE ALUMNO 3)
 “Mis retiros llegaron en los 3 primeros meses”
 — (NOMBRE ALUMNO 4)
-“La comunidad te impulsa a conseguir resultados”
-— (NOMBRE ALUMNO 5)
-“Yo no sabía de trading, pero buscaba nuevas fuentes de inversión”
-— (NOMBRE ALUMNO 6)
-“Yo entré porque ya veía gente teniendo resultados”
-— (NOMBRE ALUMNO 7)
-“Estuve en otras comunidades, pero aquí he encontrado sencillez y resultados”
-— (NOMBRE ALUMNO 8)
 
-> [(VIDEO 2) … (VIDEO 9) — testimonios en video]
+> [(VIDEO 2) … (VIDEO 5) — testimonios en video]
 
 > [Carrusel de certificados reales (fila 2, hacia la derecha): assets/proofs/cert-5…8.webp — cuentas fondeadas LucidFlex 25K. Clic = ver en grande.]
 
@@ -213,8 +205,10 @@ Incluye:
 - ✓ Actualizaciones constantes
 - ✗ No señales y no trading en vivo
 Solo un sistema probado y replicable que ya está funcionando.
-Acceso completo (PRECIO)
-(Opción a 2 pagos de (PRECIO CUOTA))
+PROMOCIÓN TEMPORAL · -50%
+Precio normal ~~$1,199~~
+Acceso completo $599
+Ahorras $600
 El costo es claro. El retorno, potencialmente ilimitado.
 
 ## Bloque 11 — CTA final + contacto mentores
@@ -273,7 +267,7 @@ Nuestros resultados son públicos. No te pedimos que confíes en palabras. Te mo
 - ✓ Transferencias bancarias reales de retiros
 - ✓ Nombres reales de personas que lo están logrando
 - ✓ Una comunidad donde puedes hablar directamente con ellos
-Si esto no funcionara, no habría +$120.000 retirados documentados.
+Si esto no funcionara, no tendríamos retiros constantes documentados.
 3
 ¿Y si ya tengo mi propia estrategia?
 Perfecto. No tienes que cambiarla. Nuestro sistema está diseñado para:
@@ -284,13 +278,13 @@ Muchos traders entran con su estrategia y la combinan con nuestro sistema de ges
 ¿Qué pasa si pierdo una cuenta?
 Esa es la pregunta correcta. Aquí no se trata de "nunca perder cuentas". Se trata de entender cómo funcionan las matemáticas de las prop firms para que:
 Aunque pierdas algunas cuentas... Sigas retirando MÁS de lo que inviertes en challenges.
-El sistema esté diseñado para eso: 85% de probabilidad de retirar. El riesgo está calculado desde el principio. Por eso traders como (NOMBRE ALUMNO 4) pueden retirar 4 veces seguidas, o (NOMBRE ALUMNO 9) puede llamarnos llorando y terminar retirando (CIFRA RESULTADO).
+El sistema esté diseñado para eso: 85% de probabilidad de retirar. El riesgo está calculado desde el principio. Por eso traders como (NOMBRE ALUMNO 4) pueden retirar 4 veces seguidas, o traders de la comunidad que nos llamaron llorando terminan retirando (CIFRA RESULTADO).
 5
 ¿De verdad puedo lograr resultados en semanas?
 Sí. Pero depende de ti. No es una promesa vacía. Es lo que ya pasó con los traders que están retirando:
 • Algunos hicieron su primer retiro en 30 días
 • Otros en 2-3 meses
-• (NOMBRE ALUMNO 7) se fondeó con (CIFRA RESULTADO) en 1 semana
+• Hay traders de la comunidad que se fondearon con (CIFRA RESULTADO) en 1 semana
 Depende de: Tu compromiso con el sistema, tu constancia (1 hora al día es no negociable) y aplicar exactamente lo que se enseña. No depende de: Suerte, años de experiencia previa, o ser un "genio del trading".
 6
 ¿Esto es trading en vivo, señales o bots?
@@ -308,7 +302,7 @@ Lo que sí incluimos son dos herramientas propias: nuestro agente AI Trader, con
 7
 ¿Cómo sé que no es otro curso más?
 Por los resultados verificables.
-$120.000+ retirados en menos de 1 año
+Retiros constantes documentados
 $150,000 fondeados en prop firms
 Traders que están retirando y comparten resultados a diario
 Certificados reales con nombres reales
@@ -342,5 +336,3 @@ Si no puedes asistir en vivo, todas las clases (excepto las privadas del viernes
 ## Bloque 13 — Footer
 
 © 2026 AI Profit Camp. Todos los derechos reservados.
-© 2025 (NOMBRE EMPRESA) | Registration Number: (NÚMERO DE REGISTRO) | (DIRECCIÓN EMPRESA)
-Privacy Policy

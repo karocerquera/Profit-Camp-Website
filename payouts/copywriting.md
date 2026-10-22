@@ -98,6 +98,4 @@ AI Profit Camp · registro público de retiros
 Mentores: Alejandro Prieto (@alejandroprieto) · Karol Cerquera (@karolaycerquera)
 Los datos los suben los traders · el equipo verifica cada comprobante
 © 2026 AI Profit Camp. Todos los derechos reservados.
-© 2025 (NOMBRE EMPRESA) | Registration Number: (NÚMERO DE REGISTRO) | (DIRECCIÓN EMPRESA)
-Los resultados mostrados corresponden a traders concretos y no garantizan resultados futuros. Operar cuentas de prop firms implica riesgo de perder el capital invertido en las evaluaciones.
-Discord → (LINK DISCORD) · Registro → (LINK REGISTRO) · Privacy Policy → (LINK PRIVACY POLICY)
+Discord → (LINK DISCORD) · Registro → (LINK REGISTRO)

@@ -80,7 +80,7 @@ function comprobantes(D){$('#cn').textContent=D.payouts.length;wall(D,$('#wall')
 
 function retiro(D){const id=new URLSearchParams(location.search).get('id')||D.payouts[0].id;const p=D.payouts.find(x=>x.id==id);const el=$('#det');
   if(!p){el.innerHTML=emptyState('(TEXTO RETIRO NO ENCONTRADO)');return}
-  document.title=`${p.id} · AI Profit Camp Payouts`;
+  document.title=`${p.id} | AI Profit Camp`;
   const f=(k,v)=>`<div class="fld"><span class="eyebrow">${k}</span><b>${v}</b></div>`;
   el.innerHTML=`<div class="dh"><div><span class="eyebrow">RETIRO VERIFICADO</span><div class="big amt">${p.amount}</div><p>Retirado por ${p.t.flag?p.t.flag+' ':''}<a class="lime" href="${L.trader(p.t.slug)}"><b>${esc(p.t.name)}</b></a></p><p class="mute">${rel(p.date)}</p></div><span class="badge-ok">Verificado</span></div>
   <div class="grid">${f('PROP FIRM',esc(p.propFirm))}${f('CUENTA',p.account)}${f('FECHA DE PAGO',long(p.date))}${f('MÉTODO',p.method)}${f('PAÍS',(p.t.flag?p.t.flag+' ':'')+esc(p.t.country))}<div class="fld"><span class="eyebrow">ID PÚBLICO</span><b class="mono">${p.id} <button class="copy" aria-label="Copiar ${p.id}">⧉</button></b></div></div>
@@ -91,7 +91,7 @@ function retiro(D){const id=new URLSearchParams(location.search).get('id')||D.pa
 
 function trader(D,T){const s=new URLSearchParams(location.search).get('slug')||D.traders[0].slug;const t=T[s];const el=$('#prof');
   if(!t){el.innerHTML=emptyState('(TEXTO TRADER NO ENCONTRADO)');return}
-  document.title=`${t.name} · AI Profit Camp Payouts`;const P2=t.payouts;const funded=t.accounts.filter(a=>a.status=='Fondeada').length;
+  document.title=`${t.name} | AI Profit Camp`;const P2=t.payouts;const funded=t.accounts.filter(a=>a.status=='Fondeada').length;
   const firms=[...new Set([...P2.map(p=>p.propFirm),...t.accounts.map(a=>a.propFirm)].filter(f=>f!='—'))];
   el.innerHTML=`<div class="phd rv"><span class="eyebrow">PERFIL PÚBLICO</span><div class="who"><span class="av" style="width:72px;height:72px">${t.avatar}</span><div><h1>${t.flag?t.flag+' ':''}${esc(t.name)}</h1><p class="mute">@${esc(t.handle)} · ${esc(t.country)}${P2.length?` · Primer retiro el ${long(P2[P2.length-1].date)}`:''}</p></div></div><p class="bio">${esc(t.bio)}</p></div>
   <div class="kpis"><div class="card k rv"><span class="eyebrow">TOTAL RETIRADO</span><div class="big">(CIFRA RETIRO)</div></div><div class="card k rv"><span class="eyebrow">RETIROS</span><div class="big" style="color:#fff">${P2.length}</div></div><div class="card k rv"><span class="eyebrow">CAPITAL FONDEADO</span><div class="big" style="color:#fff">${t.fundedCapital}</div></div><div class="card k rv"><span class="eyebrow">TASA DE FONDEO</span><div class="big" style="color:#fff">${(funded/t.accounts.length*100).toFixed(1)}%</div><p class="mute">${funded} de ${t.accounts.length} cuentas</p></div></div>

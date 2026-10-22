@@ -1,22 +1,23 @@
 import os
 FOOT='''<svg class="foot-wave" viewBox="0 0 1440 50" preserveAspectRatio="none"><path d="M0 50 C360 0 1080 0 1440 50Z" fill="#000"/></svg>
 <footer class="foot"><span data-mascot="m-float"></span><p>AI Profit Camp · registro público de retiros</p><p>Mentores: <a href="https://www.instagram.com/alejandroprieto/" target="_blank" rel="noopener" style="color:var(--lime)">Alejandro Prieto (@alejandroprieto)</a> · <a href="https://www.instagram.com/karolaycerquera/" target="_blank" rel="noopener" style="color:var(--lime)">Karol Cerquera (@karolaycerquera)</a></p><p>Los datos los suben los traders · el equipo verifica cada comprobante</p>
-<p style="font-size:14px">© 2026 AI Profit Camp. Todos los derechos reservados.<br>© 2025 (NOMBRE EMPRESA) | Registration Number: (NÚMERO DE REGISTRO) | (DIRECCIÓN EMPRESA)<br>Los resultados mostrados corresponden a traders concretos y no garantizan resultados futuros. Operar cuentas de prop firms implica riesgo de perder el capital invertido en las evaluaciones.</p>
-<p><a href="(LINK DISCORD)">Discord</a> · <a href="{P}registro/index.html">Registro</a> · <a href="{R}privacy-policy/index.html">Privacy Policy</a></p></footer>'''
+<p style="font-size:14px">© 2026 AI Profit Camp. Todos los derechos reservados.</p>
+<p><a href="(LINK DISCORD)">Discord</a> · <a href="{P}registro/index.html">Registro</a></p></footer>'''
 MODAL='''<div class="modal" id="md" role="dialog" aria-modal="true"><div class="card"><button class="x" aria-label="Cerrar">×</button><div class="ph" style="height:300px"></div><div class="big a" style="font-size:40px;margin-top:16px"></div><div class="n" style="font-weight:700"></div><div class="i mono" style="color:var(--mute);font-size:14px;margin:6px 0 18px"></div><a class="btn btn-gummy go" href="#">Ver registro verificado</a></div></div>'''
 def shell(page,depth,title,body,modal=False):
+  URLP='' if page=='home' else page+'/'
   P='../'*(depth) ; R='../'*(depth+1)
   P=P if depth else ''
   nav=[('Inicio','index.html','home'),('Registro','registro/index.html','registro'),('Ranking','ranking/index.html','ranking'),('Comprobantes','comprobantes/index.html','comprobantes')]
   links=''.join(f'<a class="{"on" if k==page else ""}" href="{P}{h}">{t}</a>' for t,h,k in nav)
-  return f'''<!doctype html><html lang="es" data-root="{R}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title>
+  return f'''<!doctype html><html lang="es" data-root="{R}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title}</title><meta name="description" content="Hackea las empresas de fondeo y genera ingresos con nuestro sistema de 1 hora al día. Registro público de retiros de la comunidad AI Profit Camp."><link rel="canonical" href="https://aiprofitcamp.com/payouts/{URLP}"><meta property="og:type" content="website"><meta property="og:site_name" content="AI Profit Camp"><meta property="og:title" content="{title}"><meta property="og:description" content="Hackea las empresas de fondeo y genera ingresos con nuestro sistema de 1 hora al día. Registro público de retiros de la comunidad AI Profit Camp."><meta property="og:url" content="https://aiprofitcamp.com/payouts/{URLP}"><meta property="og:image" content="https://aiprofitcamp.com/assets/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="es_LA"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{title}"><meta name="twitter:description" content="Hackea las empresas de fondeo y genera ingresos con nuestro sistema de 1 hora al día. Registro público de retiros de la comunidad AI Profit Camp."><meta name="twitter:image" content="https://aiprofitcamp.com/assets/og-image.png"><link rel="icon" type="image/png" sizes="32x32" href="{R}assets/favicon-32.png"><link rel="icon" type="image/png" sizes="512x512" href="{R}assets/favicon.png"><link rel="apple-touch-icon" href="{R}assets/apple-touch-icon.png">
 <link rel="stylesheet" href="{R}assets/brand.css"><link rel="stylesheet" href="{P}payouts.css"></head>
 <body class="pro" data-page="{page}" data-proot="{P}">
 <div class="ticker"><span class="live">EN VIVO</span><div class="tt"><div class="tk" id="tk"></div></div></div>
-<nav class="nav"><div class="wrap"><a class="logo" href="{P}index.html"><span data-mascot=""></span>AI Profit Camp <small>PAYOUTS</small></a><div class="links">{links}</div><div class="navr"><a class="btn btn-ghost" href="(LINK LOGIN)">Entrar</a><a class="btn btn-gummy" href="{R}index.html">Únete a AI Profit Camp</a></div></div><div class="mnav">{links}</div></nav>
+<nav class="nav"><div class="wrap"><a class="logo" href="{P}index.html"><span data-mascot=""></span>AI Profit Camp <small>PAYOUTS</small></a><div class="links">{links}</div><div class="navr"><a class="btn btn-ghost" href="(LINK LOGIN)">Entrar</a><a class="btn btn-gummy" href="{R}index.html" data-landing>Únete a AI Profit Camp</a></div></div><div class="mnav">{links}</div></nav>
 <main class="wrap">{body}</main>
 {FOOT.replace("{P}",P).replace("{R}",R)}
-<a class="sticky" href="{R}index.html"><span data-mascot=""></span>Únete a AI Profit Camp</a>
+<a class="sticky" href="{R}index.html" data-landing><span data-mascot=""></span>Únete a AI Profit Camp</a>
 {MODAL if modal else ""}
 <script src="{R}assets/brand.js"></script><script src="{P}data.js"></script><script src="{P}payouts.js"></script></body></html>'''
 SP='<svg class="spark" viewBox="0 0 300 70" preserveAspectRatio="none"><path d="{d} L300 70 L0 70Z" fill="rgba(202,230,40,.1)"/><path class="l" d="{d}" fill="none" stroke="#cae628" stroke-width="2"/></svg>'
@@ -44,7 +45,7 @@ RANK=f'''<header class="phead rv"><span class="eyebrow">LEADERBOARD</span><h1>AI
 COMP='''<header class="phead rv" style="text-align:left"><span class="eyebrow">COMPROBANTES</span><h1>La pared de las pruebas<span data-mascot="m-tilt"></span></h1><p style="margin:0"><span id="cn">0</span> comprobantes de retiros verificados. Arrástralos con el mouse o el dedo, y toca cualquiera para verlo completo.</p></header></main><div class="wall rv" id="wall"></div><main class="wrap">'''
 RET='''<div class="det"><a class="back" href="../registro/index.html">← Volver al registro</a><div class="card dcard rv" id="det"></div></div>'''
 TRA='''<div id="prof"></div>'''
-pages=[('home',0,'AI Profit Camp Payouts — Registro público de retiros',HOME,True,'index.html'),('registro',1,'Registro · AI Profit Camp Payouts',REG,False,'registro/index.html'),('ranking',1,'Ranking · AI Profit Camp Payouts',RANK,False,'ranking/index.html'),('comprobantes',1,'Comprobantes · AI Profit Camp Payouts',COMP,True,'comprobantes/index.html'),('retiro',1,'Retiro · AI Profit Camp Payouts',RET,False,'retiro/index.html'),('trader',1,'Trader · AI Profit Camp Payouts',TRA,False,'trader/index.html')]
+pages=[('home',0,'Payouts | AI Profit Camp',HOME,True,'index.html'),('registro',1,'Registro | AI Profit Camp',REG,False,'registro/index.html'),('ranking',1,'Ranking | AI Profit Camp',RANK,False,'ranking/index.html'),('comprobantes',1,'Comprobantes | AI Profit Camp',COMP,True,'comprobantes/index.html'),('retiro',1,'Retiro | AI Profit Camp',RET,False,'retiro/index.html'),('trader',1,'Trader | AI Profit Camp',TRA,False,'trader/index.html')]
 for k,dp,ti,b,m,f in pages:
   os.makedirs(os.path.dirname(f) or '.',exist_ok=True);open(f,'w').write(shell(k,dp,ti,b,m))
 print('ok')
