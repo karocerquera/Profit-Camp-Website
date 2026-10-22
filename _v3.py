@@ -138,6 +138,11 @@ details[open]{border-color:rgba(202,230,40,.45)}.case{border-radius:16px;backgro
 /* Legibilidad v5: mínimos 17px párrafos (16px móvil) */
 .mute,.ex,.q,.glass>p,.circ p{font-size:17px}.q{line-height:1.45}.circ p{line-height:1.5}
 @media(max-width:820px){.mute,.ex,.q,.glass>p{font-size:16px}.circ p{font-size:16px}}
+/* v7 media + prensa */
+.media{max-width:540px;margin:40px auto 0;text-align:center}.mloop{display:block;width:100%;height:auto;aspect-ratio:596/336;border-radius:20px;border:1px solid var(--bd);background:#0c0a26;box-shadow:0 18px 50px rgba(0,0,0,.45)}.mloop img{width:100%;height:auto}
+.talk{margin:40px 0 20px;font-family:Oswald;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:18px;color:var(--lav)}
+.logos{display:grid;grid-template-columns:1fr 1fr;align-items:center;justify-items:center;gap:40px;max-width:540px;margin:0 auto}.logos img{width:100%;height:auto;filter:drop-shadow(0 6px 18px rgba(0,0,0,.35))}.logos .lt{max-width:200px}.logos .lr{max-width:260px}
+@media(max-width:820px){.media{margin-top:28px}.talk{font-size:16px;margin:32px 0 16px}.logos{gap:24px;padding:0 6px}.logos .lt{max-width:150px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 '''
 DV=[0]
@@ -155,7 +160,7 @@ body.append(f'''<header class="topbar"><a href="#" class="tlogo" aria-label="Ini
 <span class="eyebrow rv">Cómo más de 200 traders se fondean y retiran dinero real en semanas</span>
 <h1 class="rv"><span class="gt">Hackea las empresas de fondeo</span> y genera ingresos con nuestro sistema de 1 hora al día</h1>
 <div class="callout rv">El <b class="rt">96%</b> de traders pierde en prop firms. Aquí está la comunidad del <b class="gt">4%</b> que gana.</div>
-<div class="vwrap rv"><div class="ph video"><div class="play"></div><span>(VIDEO 1)</span></div><span class="heromascot">{MS("m-float")}</span></div>
+<div class="vwrap rv"><div class="ph video"><div class="play"></div><span>(VIDEO 1)</span></div><span class="heromascot">{MS("m-float")}</span></div><div class="media rv"><video class="mloop" autoplay muted loop playsinline preload="auto" poster="assets/media/hero-loop-poster.webp" width="596" height="336" aria-label="AI Profit Camp"><source src="assets/media/hero-loop.mp4" type="video/mp4"><source src="assets/media/hero-loop.webm" type="video/webm"><img src="assets/giphy-8618131.gif" alt="" loading="lazy" width="596" height="336"></video><p class="talk">Hemos hablado en:</p><div class="logos"><img class="lt" src="assets/media/telemundo.webp" alt="Telemundo" width="474" height="400" loading="lazy" decoding="async"><img class="lr" src="assets/media/radio_nacional.webp" alt="Radio Nacional de Colombia" width="300" height="117" loading="lazy" decoding="async"></div></div>
 {cta()}</div></section>''')
 body.append(S("",'<h2 class="rv">Esto <span class="rt">no</span> es un curso ni una mentoría más</h2><p class="lead rv">La mayoría de "cursos de trading" te enseñan a operar en capital real. Pero las cuentas de fondeo no funcionan con las mismas reglas.</p><p class="lead b rv">Aquí dentro no aprenderás teoría de trading tradicional. Aprenderás:</p><div class="grid2">'+''.join(f'<div class="glass rv">{t}</div>' for t in ["Un sistema matemáticamente validado: es matemática con datos comprobados","Cómo fondear cuentas en días o semanas (no en años)","Gestión de riesgo específica para prop firms (no la tradicional del 2%)",'Cómo convertirte en un "gestor de cuentas fondeadas", no en un trader profesional'])+'</div>'))
 body.append(f'''<section><div class="w"><p class="lead rv">La mayoría de traders nunca retira un dólar de una prop firm.</p><h2 class="rv" style="font-size:clamp(24px,3vw,36px)">Estos son los resultados de nuestra comunidad en menos de un año</h2>

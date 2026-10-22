@@ -46,3 +46,7 @@ document.body.appendChild(box);cl.forEach((q,i)=>io.observe(box.children[i]));pl
 document.addEventListener('visibilitychange',play);rm.addEventListener&&rm.addEventListener('change',play);
 const go=()=>(window.requestIdleCallback||setTimeout)(build,{timeout:1500});let rt,lw=0;
 document.readyState==='complete'?go():addEventListener('load',go);addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{const w=document.documentElement.clientWidth;if(w!==lw){lw=w;build()}},250)},{passive:true})})();
+
+/* ===== Video en bucle diferido (carga al entrar en pantalla) ===== */
+(function(){const vs=document.querySelectorAll('video[data-lazy]');if(!vs.length||!('IntersectionObserver'in window))return;const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){if(!v.dataset.ok){v.dataset.ok=1;v.querySelectorAll('source[data-src]').forEach(s=>s.src=s.dataset.src);v.load()}rm||v.play().catch(()=>{})}else if(v.dataset.ok)v.pause()}),{rootMargin:'200px'});vs.forEach(v=>io.observe(v))})();
