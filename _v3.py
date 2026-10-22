@@ -6,7 +6,7 @@ def ok(t,c="ok"):
   ic={'ok':'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M7 12.5l3.2 3L17 9"/></svg>','no':'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7"/></svg>'}[c]
   return f'<li class="ic {c}">{ic}<span>{t}</span></li>'
 def mentors():
-  return '<div class="mentors">'+''.join(f'''<div class="glass mentor rv"><div class="mtag">HABLA CON {MF[n].upper()}</div><div class="ph avatar">(FOTO MENTOR {n})</div><div class="handle">@{IG[n]}</div><p class="mute">Continúa la conversación con {MN[n]}:</p><a class="igbtn" href="https://www.instagram.com/{IG[n]}/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a></div>''' for n,_ in M)+'</div>'
+  return '<div class="mentors">'+''.join(f'''<div class="glass mentor rv"><div class="mtag">HABLA CON {MF[n].upper()}</div><img class="avatar mimg" src="assets/mentores/{ {'1':'alejandro','2':'karol'}[n]}-300.webp" srcset="assets/mentores/{ {'1':'alejandro','2':'karol'}[n]}-300.webp 300w, assets/mentores/{ {'1':'alejandro','2':'karol'}[n]}-600.webp 600w" sizes="110px" alt="{ {'1':'Alejandro Prieto','2':'Karol Cerquera'}[n]}" width="300" height="300" loading="lazy" decoding="async"><div class="handle">@{IG[n]}</div><p class="mute">Continúa la conversación con {MN[n]}:</p><a class="igbtn" href="https://www.instagram.com/{IG[n]}/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a></div>''' for n,_ in M)+'</div>'
 def cta():
   return f'''<div class="ctaWrap rv"><a class="cta" href="(LINK DE PAGO)">ÚNETE HOY</a></div><p class="lead">No aplicamos con todo el mundo. Queremos traders comprometidos que estén listos para aplicar el sistema.</p><p class="lead b">Hablemos directamente para ver si el bootcamp es para ti:</p>{mentors()}'''
 HUES=['hue-red','hue-blue','hue-vio','hue-orange','']
@@ -143,6 +143,7 @@ details[open]{border-color:rgba(202,230,40,.45)}.case{border-radius:16px;backgro
 .talk{margin:40px 0 20px;font-family:Oswald;font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:18px;color:var(--lav)}
 .logos{display:grid;grid-template-columns:1fr 1fr;align-items:center;justify-items:center;gap:40px;max-width:540px;margin:0 auto}.logos img{width:100%;height:auto;filter:drop-shadow(0 6px 18px rgba(0,0,0,.35))}.logos .lt{max-width:200px}.logos .lr{max-width:260px}
 @media(max-width:820px){.media{margin-top:28px}.talk{font-size:16px;margin:32px 0 16px}.logos{gap:24px;padding:0 6px}.logos .lt{max-width:150px}}
+.mimg{display:block;object-fit:cover;object-position:50% 35%;padding:0;background:#0c0a26}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 '''
 DV=[0]
