@@ -22,6 +22,10 @@ Instagram
 
 > [Video YouTube: https://www.youtube.com/watch?v=ChIz3tA91YI]
 
+Visto en:
+> [Logos: Telemundo · Radio Nacional de Colombia]
+> [GIF en bucle]
+
 ## Bloque 2 — Esto no es un curso
 
 Esto no es un curso ni una mentoría más
