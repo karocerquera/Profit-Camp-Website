@@ -25,7 +25,7 @@ load().then(D=>{
 });
 
 function row(p){return `<tr data-href="${L.retiro(p.id)}"><td class="id"><a href="${L.retiro(p.id)}">${p.id}</a></td><td class="tr">${p.t.flag?p.t.flag+' ':''}<a href="${L.trader(p.t.slug)}">${esc(p.t.name)}</a></td><td>${esc(p.propFirm)}</td><td class="m">${p.amount}</td><td class="d">${short(p.date)}</td><td><span class="badge-ok">Verificado</span></td></tr>`}
-function mrow(p){return `<a class="mi" href="${L.retiro(p.id)}"><span class="m">${p.amount}</span><span class="badge-ok">Verificado</span><span class="n">${p.t.flag?p.t.flag+' ':''}${esc(p.t.name)}</span><span class="d" style="color:var(--mute);font-size:12px">${short(p.date)}</span><span class="s">${p.propFirm=='—'?'Sin prop firm':esc(p.propFirm)} · <span class="mono">${p.id}</span></span></a>`}
+function mrow(p){return `<a class="mi" href="${L.retiro(p.id)}"><span class="m">${p.amount}</span><span class="badge-ok">Verificado</span><span class="n">${p.t.flag?p.t.flag+' ':''}${esc(p.t.name)}</span><span class="d" style="color:var(--mute);font-size:14px">${short(p.date)}</span><span class="s">${p.propFirm=='—'?'Sin prop firm':esc(p.propFirm)} · <span class="mono">${p.id}</span></span></a>`}
 function bindRows(sc=document){sc.querySelectorAll('tr[data-href]').forEach(tr=>tr.addEventListener('click',e=>{if(!e.target.closest('a'))location.href=tr.dataset.href}))}
 function emptyState(txt){return `<div class="empty">${M('m-sad')}${txt}</div>`}
 

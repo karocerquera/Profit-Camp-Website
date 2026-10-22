@@ -120,6 +120,8 @@ LO QUE ENCUENTRAS DENTRO DE AI PROFIT CAMP
 - ✓ Data estadística detallada (no teoría, números reales)
 - ✓ Ruta completa para prop firms: cuál empresa es más fácil, qué activo usar, cómo pasar en días
 - ✓ Ruta completa para Futuros: el sistema del "colchón", cómo fondearte en 1 hora, gestión del DD
+- ✓ Nuestro agente AI Trader con la estrategia ya automatizada
+- ✓ La Calculadora Estadística IA para trabajar con la data del sistema
 Pero aquí está la verdad:
 Esto no es solo "contenido". La mayoría de cursos te dan videos y te dejan solo. Aquí es diferente.
 Lo que NO puedes encontrar en ningún otro lugar es esto:
@@ -144,6 +146,8 @@ NO son promesas vacías de "puedes ganar millones"
 Son personas reales compartiendo resultados cada semana.
 NO es un guru diciéndote qué hacer desde su yate
 Son Alejandro y Karol respondiéndote desde su experiencia
+NO son señales para copiar
+Son herramientas propias: el agente AI Trader con la estrategia ya automatizada y la Calculadora Estadística IA
 
 ## Bloque 8 — Sistema validado
 
@@ -165,6 +169,7 @@ Aquí no estás solo con videos grabados.
 - • Acompañamiento directo cuando estás a punto de perder una cuenta
 - • Celebración diaria de resultados - Todos compartimos trades y retiros
 - • Llamadas privadas los viernes (no grabadas, solo para la comunidad)
+- • Acceso al agente AI Trader y a la Calculadora Estadística IA
 El ambiente importa más que la estrategia.
 
 ## Bloque 9 — Testimonios
@@ -233,6 +238,7 @@ Seguir intentando solo, con cursos genéricos, perdiendo cuentas y tiempo.
 RECOMENDADO
 Opción 2
 Unirte a la comunidad del 4% que sí gana en prop firms.
+Con el sistema, la comunidad, el agente AI Trader y la Calculadora Estadística IA.
 Esto es lo que separa a quienes siguen perdiendo de quienes ya están retirando dinero real cada mes.
 ÚNETE HOY
 No aplicamos con todo el mundo. Queremos traders comprometidos que estén listos para aplicar el sistema.
@@ -297,6 +303,8 @@ Te damos:
 - ✓ Un sistema replicable
 - ✓ Que aprendes una vez
 - ✓ Y aplicas para siempre
+
+Lo que sí incluimos son dos herramientas propias: nuestro agente AI Trader, con la estrategia ya automatizada, y la Calculadora Estadística IA. Son parte del sistema, no señales ni trading en vivo.
 7
 ¿Cómo sé que no es otro curso más?
 Por los resultados verificables.
@@ -313,10 +321,16 @@ No importa si: Operas futuros o cualquier otra prop firm, tienes 2 meses o 20 a�
 Solo importa que: Estés dispuesto a dedicar 1 hora al día, sigas el sistema paso a paso y te comprometas hasta lograrlo.
 Si cumples eso, este bootcamp es para ti.
 9
+¿Qué son el AI Trader y la Calculadora Estadística IA?
+Son dos herramientas que vienen incluidas en AI Profit Camp.
+AI Trader: nuestro agente con la estrategia ya automatizada. Es la misma estrategia que aprendes en el bootcamp, lista para que la uses.
+Calculadora Estadística IA: la calculadora para trabajar con la data estadística del sistema.
+No son señales ni trading en vivo, y no reemplazan tu compromiso ni la gestión de riesgo. Son herramientas para aplicar el sistema.
+10
 ¿Funciona con cualquier prop firm?
 Sí. Funciona con CUALQUIER prop firm: FTMO, CFDs en general, Futuros (NinjaTrader, Topstep, etc.).
 El sistema está diseñado para las REGLAS de las prop firms, no para una empresa específica. En el bootcamp te enseñamos cómo aplicarlo en cada una.
-10
+11
 ¿Qué pasa si no tengo tiempo para 3 clases semanales?
 No hay problema. Todo queda grabado.
 Las 3 clases en vivo son:

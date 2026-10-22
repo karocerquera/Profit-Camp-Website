@@ -34,3 +34,15 @@
 @media(max-width:640px){.dot{font-size:8px}.s3{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}.s3 .met{padding:14px}.s3 .met .v{font-size:20px}.s3 .lbl{font-size:10.5px}.dh{flex-direction:column-reverse;padding:22px}.proof,.vfy{padding-left:20px;padding-right:20px}.k .big{font-size:22px}}
 .dh .badge-ok{align-self:flex-start}
 .pod{margin-top:46px}.phead b.lime{color:var(--lime)}
+
+/* ===== Legibilidad v5: tamaños mínimos (14px etiquetas, 17/16px párrafos) ===== */
+.hint,.idb,.pos,.st,.ti small,.k p,.mi .d,.back,.vfy,.met p,.rkc p,.podc p,.row,.row b,.row span,.lbl,.lbl b,.ph b,th,td,td.id,td.id a,small .mono,p>a,.card>p,.card>p.mute,.mnav a,.foot p,.zoom button,.copy{font-size:14px}
+.row small{font-size:14px}
+.s3 .lbl{font-size:14px}
+.dot{font-size:13px}
+.total p,.pro p{line-height:1.5}
+.phead p,.bio,.mentors-line,.pro .w>p{font-size:17px;line-height:1.6}
+@media(max-width:640px){.dot{font-size:13px}.mnav a{font-size:14px}.phead p,.bio,.mentors-line{font-size:16px}}
+.pro .t th,.pro .t .id,.pro .mi .d,.pro .lbl b,.pro .row small,.pro .foot p,.pro .foot small{font-size:14px}
+.pro .w div>p{line-height:1.5}
+@media(max-width:640px){.pro .k p{font-size:16px}}
